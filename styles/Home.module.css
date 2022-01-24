@@ -1,0 +1,53 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.containerM {
+  position: relative;
+}
+
+.container video {
+  position: relative;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop {
+  height: 40vh;
+  width: 100vw;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    176deg,
+    rgba(2, 0, 36, 0.6180847338935574) 0%,
+    rgba(6, 9, 14, 0.9850315126050421) 89%,
+    rgba(6, 9, 14, 1) 100%
+  );
+}
+
+.imageContainer {
+  position: absolute;
+  height: 40vh;
+  width: 100vw;
+}
+
+.video {
+  width: 100vw;
+  height: 50vh;
+}
